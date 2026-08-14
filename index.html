@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Northstar Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <div class="brand-mark">N</div>
+          <div>
+            <p class="brand-name">Northstar</p>
+            <span class="brand-subtitle">Operations Suite</span>
+          </div>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a class="active" href="#">Dashboard</a>
+          <a href="#">Analytics</a>
+          <a href="#">Projects</a>
+          <a href="#">Teams</a>
+          <a href="#">Reports</a>
+        </nav>
+
+        <div class="topbar-actions">
+          <button class="icon-button" aria-label="Search">⌕</button>
+          <button class="primary-button">New Report</button>
+          <div class="user-pill">
+            <div class="avatar">AM</div>
+            <div>
+              <strong>Alicia M.</strong>
+              <span>Admin</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="dashboard">
+        <section class="overview-row">
+          <div>
+            <p class="eyebrow">Overview</p>
+            <h1>Performance Dashboard</h1>
+          </div>
+          <div class="date-badge">Updated 12 mins ago</div>
+        </section>
+
+        <section class="stats-grid">
+          <article class="stat-card accent-1">
+            <div class="stat-header">
+              <span>Total Revenue</span>
+              <span class="trend up">+18.2%</span>
+            </div>
+            <h2>$84.2K</h2>
+            <div class="stat-meta">
+              <span>vs last month</span>
+              <strong>$71.3K</strong>
+            </div>
+          </article>
+
+          <article class="stat-card accent-2">
+            <div class="stat-header">
+              <span>Active Users</span>
+              <span class="trend up">+9.4%</span>
+            </div>
+            <h2>24.8K</h2>
+            <div class="stat-meta">
+              <span>monthly growth</span>
+              <strong>1,892</strong>
+            </div>
+          </article>
+
+          <article class="stat-card accent-3">
+            <div class="stat-header">
+              <span>Conversion</span>
+              <span class="trend down">-2.1%</span>
+            </div>
+            <h2>5.84%</h2>
+            <div class="stat-meta">
+              <span>target</span>
+              <strong>6.25%</strong>
+            </div>
+          </article>
+
+          <article class="stat-card accent-4">
+            <div class="stat-header">
+              <span>Pending Tasks</span>
+              <span class="trend neutral">12</span>
+            </div>
+            <h2>86</h2>
+            <div class="stat-meta">
+              <span>due this week</span>
+              <strong>7 urgent</strong>
+            </div>
+          </article>
+        </section>
+
+        <section class="content-grid">
+          <div class="panel revenue-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Revenue</p>
+                <h3>Sales Overview</h3>
+              </div>
+              <button class="secondary-button">This Year</button>
+            </div>
+
+            <div class="chart" aria-label="Sales performance chart">
+              <div class="bar-group">
+                <span class="bar" style="height: 35%"></span>
+                <label>Jan</label>
+              </div>
+              <div class="bar-group">
+                <span class="bar" style="height: 48%"></span>
+                <label>Feb</label>
+              </div>
+              <div class="bar-group">
+                <span class="bar" style="height: 42%"></span>
+                <label>Mar</label>
+              </div>
+              <div class="bar-group">
+                <span class="bar" style="height: 65%"></span>
+                <label>Apr</label>
+              </div>
+              <div class="bar-group">
+                <span class="bar" style="height: 58%"></span>
+                <label>May</label>
+              </div>
+              <div class="bar-group">
+                <span class="bar" style="height: 82%"></span>
+                <label>Jun</label>
+              </div>
+              <div class="bar-group">
+                <span class="bar" style="height: 76%"></span>
+                <label>Jul</label>
+              </div>
+            </div>
+          </div>
+
+          <aside class="panel progress-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Progress</p>
+                <h3>Team Targets</h3>
+              </div>
+            </div>
+
+            <ul class="progress-list">
+              <li>
+                <div class="progress-meta">
+                  <span>Marketing</span>
+                  <strong>78%</strong>
+                </div>
+                <div class="progress-track"><span style="width: 78%"></span></div>
+              </li>
+              <li>
+                <div class="progress-meta">
+                  <span>Sales</span>
+                  <strong>92%</strong>
+                </div>
+                <div class="progress-track"><span style="width: 92%"></span></div>
+              </li>
+              <li>
+                <div class="progress-meta">
+                  <span>Product</span>
+                  <strong>64%</strong>
+                </div>
+                <div class="progress-track"><span style="width: 64%"></span></div>
+              </li>
+              <li>
+                <div class="progress-meta">
+                  <span>Support</span>
+                  <strong>88%</strong>
+                </div>
+                <div class="progress-track"><span style="width: 88%"></span></div>
+              </li>
+            </ul>
+          </aside>
+        </section>
+
+        <section class="lower-grid">
+          <div class="panel table-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Projects</p>
+                <h3>Current Pipeline</h3>
+              </div>
+              <a href="#">View all</a>
+            </div>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Client</th>
+                  <th>Owner</th>
+                  <th>Status</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Nova Labs</td>
+                  <td>J. Parker</td>
+                  <td><span class="badge success">On Track</span></td>
+                  <td>$18.4K</td>
+                </tr>
+                <tr>
+                  <td>Summit Co.</td>
+                  <td>K. Lewis</td>
+                  <td><span class="badge pending">Review</span></td>
+                  <td>$12.1K</td>
+                </tr>
+                <tr>
+                  <td>BrightPath</td>
+                  <td>M. Shah</td>
+                  <td><span class="badge alert">Delayed</span></td>
+                  <td>$9.6K</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="panel actions-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Quick Actions</p>
+                <h3>Favorites</h3>
+              </div>
+            </div>
+
+            <div class="action-list">
+              <div class="action-item">
+                <span class="action-icon blue">✓</span>
+                <div>
+                  <strong>Approve invoices</strong>
+                  <small>3 pending</small>
+                </div>
+              </div>
+              <div class="action-item">
+                <span class="action-icon purple">↗</span>
+                <div>
+                  <strong>Launch campaign</strong>
+                  <small>Q3 renewal</small>
+                </div>
+              </div>
+              <div class="action-item">
+                <span class="action-icon green">+</span>
+                <div>
+                  <strong>Create report</strong>
+                  <small>Weekly summary</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
